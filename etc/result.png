@@ -1,0 +1,161 @@
+<html><head><title></title><style type="text/css">
+* {
+    color: #ffffff;
+    background-color: #595857;
+}
+
+h1 {
+    color: #2b2b2b;
+    background-color: #dcdddd;
+    padding-left: 20px;
+    border-left: 20px solid #2b2b2b;
+}
+
+h1.login {
+    color: #2b2b2b;
+    background-color: #dcdddd;
+    text-align: center;
+    padding-left: 0px;
+    border-left: 0px;
+}
+
+h2 {
+    color: #2b2b2b;
+    background-color: #dcdddd;
+    padding-left: 10px;
+    border-left: 15px solid #2b2b2b;
+}
+
+h3 {
+    color: #dcdddd;
+    padding-left: 10px;
+    border-left: 10px solid #2b2b2b;
+    border-bottom: 2px solid #dcdddd;
+}
+
+h4 {
+    color: #dcdddd;
+    padding-left: 10px;
+    border-left: 8px solid #2b2b2b;
+    border-bottom: 2px solid #dcdddd;
+}
+
+table, th, td {
+    margin: 0;
+    padding: 0;
+    border-collapse: separate;
+    border: none;
+    border-spacing: 0;
+}
+
+table {
+    margin: 20px;
+    border: 1px solid #eeeeee;
+    background: #da9e7f6;
+}
+
+caption {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    border-left: 6px solid #2b2b2b;
+    line-height: 1.8;
+    font-weight: bold;
+    text-align: left;
+    color: #dcdddd;
+}
+
+th {
+    padding: 0.8em 0.5em;
+    border-color: #629cdd #8db7e6 #629cdd #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    color: #2b2b2b;
+    background: #d4dcda;
+    font-weight: bold:
+    text-align: left;
+}
+
+td {
+    padding: 0.8em 0.5em;
+    border-color: #ffffff #81b0e4 #81b0e4 #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    background: #595857;
+}
+
+div#header {
+//    border-bottom: 1px solid #dcdddd;
+}
+
+div#container {
+    overflow: hidden;
+}
+
+div#aside {
+    float: left;
+    width: 19%;
+}
+
+div#article {
+    float: right;
+    width: 80%;
+    border-left: 1px solid #dcdddd;
+}
+
+div#article-body {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div#footer {
+    border-top: 1px solid #dcdddd;
+    color: #dcdddd;
+}
+
+div.powered {
+    float: right;
+    color: #2b2b2b;
+}
+
+div.login {
+    text-align:center;
+}
+
+table.login {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:justify;
+}
+</style></head><body>
+<header>
+<div id="header">
+<div id="header-content">
+<h1>SimpleModelerService</h1>
+</div>
+</div>
+</header>
+<div id="container">
+<aside>
+<div id="aside">
+<div id="aside-content">
+<ul><li><a href="/sm.html">/sm</a></li><li><a href="/.html">/</a></li></ul>
+</div>
+</div>
+</aside>
+<article>
+<div id="article">
+<div id="article-body">
+no result
+</div>
+</div>
+</article>
+</div>
+<footer>
+<div id="footer">
+<div class="powered">
+Powered by g3.
+</div>
+</div>
+</footer>
+</body></html>

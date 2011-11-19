@@ -1,0 +1,9 @@
+*~
+*.bak
+*.org
+.*
+bin
+gen
+target
+lib_managed
+lib
