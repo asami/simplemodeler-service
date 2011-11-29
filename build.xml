@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<project name="project" default="war" basedir=".">
+
+  <property name="war.home" value="target/scala-2.9.1" />
+  <property name="war.lib" value="target/war.lib" />
+
+  <target name="copy">
+    <copy todir="${war.lib}" flatten="true">
+      <fileset dir="lib">
+        <filename name="*.jar"/>
+      </fileset>
+      <fileset dir="lib_managed">
+        <filename name="**/*.jar"/>
+      </fileset>
+      <fileset dir="/Users/asami/.sbt/boot/scala-2.9.1/lib">
+        <filename name="**/scala-*.jar"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="war" depends="copy">
+    <war destfile="${war.home}/g3-simplemodeler.war" webxml="src/main/webapp/WEB-INF/web.xml">
+      <fileset dir="src/main/webapp/"/>
+      <lib dir="${war.lib}"/>
+      <classes dir="${war.home}/classes"/>
+    </war>
+  </target>
+</project>

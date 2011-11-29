@@ -12,10 +12,11 @@ import org.simplemodeling.SimpleModeler.SimpleModeler
 import org.goldenport.entity.datasource.ObjectDataSource
 import com.sun.corba.se.spi.legacy.connection.GetEndPointInfoAgainException
 import org.goldenport.entity.content.BinaryContent
+import org.simplemodeling.SimpleModeler.SimpleModelerDescriptor
 
 /**
  * @since   Nov.  8, 2011
- * @version Nov. 14, 2011
+ * @version Nov. 28, 2011
  * @author  ASAMI, Tomoharu
  */
 class SimpleModelerService extends G3Application with UseRecord {
@@ -28,6 +29,23 @@ class SimpleModelerService extends G3Application with UseRecord {
       "OK"
     }
   }
+
+  port("/smf") agentf(Command.action _)
+
+  port("/smo") agento(Command) // action is a first method
+
+  port("/smo") agento(Component) // apply method
+
+  port("/smx") agentx(Command.action _, Component, {
+    case p: Post => Command.action(p)
+    case x => _peek(x);"OK"
+  }: PartialFunction[AnyRef, AnyRef], SimpleModelerDescriptor)
+
+  port("/smxg") agentx(SimpleModelerDescriptor)
+
+  port("/smg") invoke('sm) 
+
+  goldenport('sm, SimpleModelerDescriptor)
 
   private def _peek(x: AnyRef) = {
     println(x)
@@ -57,8 +75,14 @@ object Command {
   }
 
   private def _exception(e: Throwable) {
-    println("exception: " + e)    
+    println("exception => " + e.getStackTraceString)
   }
+}
+
+object Component {
+  def dummy(in: AnyRef) = "Dummy"
+  
+  def apply(p: Post) = Command.action(p)
 }
 
 object Main {

@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" output=".target/scala-2.9.1/classes" path="src/main/scala"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib/scala-compiler-2.9.1.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/.sbt/boot/scala-2.9.1/lib/scala-compiler.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.scalatest/scalatest/scalatest-1.2.jar"/>
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/com.google.code.guice/guice/guice-2.0.jar"/>
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/aopalliance/aopalliance/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.slf4j/slf4j-api/slf4j-api-1.5.11.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.httpcomponents/httpcore/httpcore-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.httpcomponents/httpclient/httpclient-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-logging/commons-logging/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-codec/commons-codec/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.httpcomponents/httpmime/httpmime-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.james/apache-mime4j/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/oauth.signpost/signpost-core/signpost-core-1.2.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/oauth.signpost/signpost-commonshttp4/signpost-commonshttp4-1.2.1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.eclipse.jetty/jetty-webapp/jetty-webapp-7.1.4.v20100610.jar"/>
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.eclipse.jetty/jetty-xml/jetty-xml-7.1.4.v20100610.jar"/>
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.eclipse.jetty/jetty-util/jetty-util-7.1.4.v20100610.jar"/>
@@ -14,63 +26,7 @@
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.eclipse.jetty/jetty-continuation/jetty-continuation-7.1.4.v20100610.jar"/>
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.eclipse.jetty/jetty-http/jetty-http-7.1.4.v20100610.jar"/>
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.eclipse.jetty/jetty-io/jetty-io-7.1.4.v20100610.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.slf4j/slf4j-api/slf4j-api-1.5.11.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.httpcomponents/httpcore/httpcore-4.0.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.httpcomponents/httpclient/httpclient-4.0.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-logging/commons-logging/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-codec/commons-codec/commons-codec-1.3.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.httpcomponents/httpmime/httpmime-4.0.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.james/apache-mime4j/apache-mime4j-0.6.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/oauth.signpost/signpost-core/signpost-core-1.2.1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/oauth.signpost/signpost-commonshttp4/signpost-commonshttp4-1.2.1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-fileupload/commons-fileupload/commons-fileupload-1.2.2.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-io/commons-io/commons-io-1.3.2.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/.sbt/boot/scala-2.9.1/lib/scala-compiler.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.scalatest/scalatest/scalatest-1.2.jar"/>
 	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.eclipse.jetty/jetty-websocket/jetty-websocket-7.1.4.v20100610.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.apache.derby/derby/derby-10.4.2.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/com.googlecode.json-simple/json-simple/json-simple-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/javax.mail/mail/mail-1.4.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/javax.activation/activation/activation-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/net.oauth.core/oauth/oauth-20090825.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/gdata-calendar/gdata-calendar-2.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/gdata-calendar-meta/gdata-calendar-meta-2.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/gdata-docs/gdata-docs-3.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/gdata-docs-meta/gdata-docs-meta-3.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/gdata-client/gdata-client-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/gdata-client-meta/gdata-client-meta-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/gdata-core/gdata-core-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/gdata-media/gdata-media-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/google-collect/google-collect-1.0-rc1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/gdata/jsr305/jsr305-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/evernote/libthrift/libthrift-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/evernote/evernote-api/evernote-api-1.15.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/dropbox/dropbox-client/dropbox-client-1.0-20100711.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/net.sourceforge.htmlunit/htmlunit/htmlunit-1.14.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/jaxen/jaxen/jaxen-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/xerces/xercesImpl/xercesImpl-2.6.2.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-collections/commons-collections/commons-collections-3.2.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-lang/commons-lang/commons-lang-2.3.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/commons-httpclient/commons-httpclient/commons-httpclient-3.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/rhino/js/js-1.6R7.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/xerces/xmlParserAPIs/xmlParserAPIs-2.6.2.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/nekohtml/nekohtml/nekohtml-0.9.5.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/net.sourceforge.cssparser/cssparser/cssparser-0.9.4.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/appengine/api-1.0/api-1.0-1.3.7.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/appengine/api-labs/api-labs-1.3.7.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/bundles/com.sun.jersey/jersey-server/jersey-server-1.5.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/bundles/com.sun.jersey/jersey-core/jersey-core-1.5.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/asm/asm/asm-3.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/bundles/com.sun.jersey/jersey-json/jersey-json-1.5.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/bundles/org.codehaus.jettison/jettison/jettison-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/stax/stax-api/stax-api-1.0.1.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/com.sun.xml.bind/jaxb-impl/jaxb-impl-2.2.3.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/javax.xml.bind/jaxb-api/jaxb-api-2.2.2.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/javax.xml.stream/stax-api/stax-api-1.0-2.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.codehaus.jackson/jackson-core-asl/jackson-core-asl-1.5.5.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.codehaus.jackson/jackson-mapper-asl/jackson-mapper-asl-1.5.5.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.codehaus.jackson/jackson-jaxrs/jackson-jaxrs-1.5.5.jar"/>
-	<classpathentry kind="lib" path="/Users/asami/Development/workspace2011/eclipse-scala29/g3-simplemodeler/lib_managed/jars/org.codehaus.jackson/jackson-xc/jackson-xc-1.5.5.jar"/>
 	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/g3"/>
