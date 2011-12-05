@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.0">
+  <head>
+    <title>outline</title>
+    <expansionState>0,2,4,5,6,8</expansionState>
+  </head>
+  <body>
+    <outline text="登場人物">
+      <outline text="会員"/>
+    </outline>
+    <outline text="道具">
+      <outline text="商品"/>
+    </outline>
+    <outline text="出来事">
+      <outline text="買う">
+        <outline text="主役">
+          <outline text="会員"/>
+        </outline>
+        <outline text="部品">
+          <outline text="商品"/>
+        </outline>
+      </outline>
+    </outline>
+  </body>
+</opml>

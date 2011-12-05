@@ -30,7 +30,7 @@
 
   <servlet-mapping>
     <servlet-name>g3</servlet-name>
-    <url-pattern>/sm/*</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>goldenport</servlet-name>

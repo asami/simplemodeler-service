@@ -5,22 +5,32 @@ import org.goldenport.g3.atom._
 import org.goldenport.g3.messages._
 import org.goldenport.g3.messages.http._
 import org.goldenport.g3.events.Getted
-import org.apache.commons.fileupload.FileUpload
-import org.apache.commons.fileupload.FileItem
-import org.apache.commons.fileupload.servlet.ServletFileUpload
-import org.simplemodeling.SimpleModeler.SimpleModeler
 import org.goldenport.entity.datasource.ObjectDataSource
-import com.sun.corba.se.spi.legacy.connection.GetEndPointInfoAgainException
 import org.goldenport.entity.content.BinaryContent
+import org.simplemodeling.SimpleModeler.SimpleModeler
 import org.simplemodeling.SimpleModeler.SimpleModelerDescriptor
 
 /**
  * @since   Nov.  8, 2011
- * @version Nov. 28, 2011
+ * @version Dec.  5, 2011
  * @author  ASAMI, Tomoharu
  */
-class SimpleModelerService extends G3Application with UseRecord {
-  port("/") html(<p>SimpleModeler Service</p>)
+class SimpleModelerService extends G3Application {
+//  port("/") html(<p>SimpleModeler Service</p>)
+
+  title = "SimpleModeler"
+  summary = <div>SimpleModeler service produces various artifacts from a SimpleModeling model.</div>
+
+  port("/diagram",
+      Description(
+          "Diagram", "SimpleModeler Diagram Service",
+          <div locale="en">SimpleModeler diagram service produces a class diagram from a mindmap modeled by MindmapModeling.</div>,
+          Schema(
+              (Symbol("source.package"), XString, MZeroOne),
+              ('_1, XBase64Binary)))
+  ) agentpf {
+    case p: Post => Post("diagram", p)
+  } invoke('sm)
 
   port("/sm") agent {
     case p: Post => Command.action(p)
@@ -57,7 +67,7 @@ object Command {
 
   def action(p: Post): AnyRef = {
     try {
-      val files = p.getAttachments()
+      val files = p.getFileAttachments()
       val file = files(0)
       val sm = new SimpleModeler(Array())
       sm.useFirstLeafExporter()

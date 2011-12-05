@@ -3,8 +3,10 @@
 
   <property name="war.home" value="target/scala-2.9.1" />
   <property name="war.lib" value="target/war.lib" />
+  <property name="war.name" value="simplemodeler.war" />
+  <property name="autodeploy.dir" value="${user.home}/lib/glassfish3/glassfish/domains/domain1/autodeploy"/>
 
-  <target name="copy">
+  <target name="prepare">
     <copy todir="${war.lib}" flatten="true">
       <fileset dir="lib">
         <filename name="*.jar"/>
@@ -18,11 +20,16 @@
     </copy>
   </target>
 
-  <target name="war" depends="copy">
-    <war destfile="${war.home}/g3-simplemodeler.war" webxml="src/main/webapp/WEB-INF/web.xml">
+  <target name="war" depends="prepare">
+    <war destfile="${war.home}/${war.name}" webxml="src/main/webapp/WEB-INF/web.xml">
       <fileset dir="src/main/webapp/"/>
       <lib dir="${war.lib}"/>
       <classes dir="${war.home}/classes"/>
     </war>
+  </target>
+
+  <target name="deploy" depends="war">
+    <copy todir="${autodeploy.dir}"
+	  file="${war.home}/${war.name}"/>
   </target>
 </project>

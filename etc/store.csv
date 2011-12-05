@@ -1,0 +1,6 @@
+#actor,base,parts
+customer
+#resource
+goods
+#event
+buy,,customer;goods
