@@ -12,7 +12,7 @@ import org.simplemodeling.SimpleModeler.SimpleModelerDescriptor
 
 /**
  * @since   Nov.  8, 2011
- * @version Dec.  6, 2011
+ * @version Dec. 14, 2011
  * @author  ASAMI, Tomoharu
  */
 class SimpleModelerService extends G3Application {
@@ -28,6 +28,17 @@ class SimpleModelerService extends G3Application {
               ('_1, XBase64Binary)))
   ) agentpf {
     case p: Post => Post("diagram", p)
+  } invoke('sm)
+
+  port("/java",
+      Description(
+          "Java", "SimpleModeler Java Service",
+          <div locale="en">SimpleModeler java service produces java source files.</div>,
+          Schema(
+              (Symbol("source.package"), XString, MZeroOne),
+              ('_1, XBase64Binary)))
+  ) agentpf {
+    case p: Post => Post("java", p)
   } invoke('sm)
 
   goldenport('sm, SimpleModelerDescriptor)

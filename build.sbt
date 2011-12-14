@@ -16,9 +16,9 @@ proguardOptions += keepMain("org.simplemodeling.SimpleModeler.g3.Main")
 
 // seq(webSettings :_*)
 
-libraryDependencies += "org.simplemodeling" % "SimpleModeler" % "0.3.0"
+// libraryDependencies += "org.simplemodeling" % "SimpleModeler" % "0.3.0"
 
-// libraryDependencies += "org.simplemodeling" % "SimpleModeler" % "0.3.0-SNAPSHOT"
+libraryDependencies += "org.simplemodeling" % "SimpleModeler" % "0.3.1-SNAPSHOT"
 
 libraryDependencies += "com.google.code.guice" % "guice" % "2.0"
 
